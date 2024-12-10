@@ -1,0 +1,325 @@
+  /* * {
+    margin: 0 auto;
+  } */
+
+
+  body {
+    overflow-x: hidden; /* Para evitar scroll horizontal */
+}
+
+.logoTopo{
+margin-left: 100px;
+ }
+.produto{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fundo{
+  background-color: #fff;
+  /* margin: 0px; */
+
+}
+
+.listras{
+  background-color:white;
+  color: #fff;
+}
+
+
+
+.navbar-toggler.listras .navbar-toggler-icon {
+  background-image: none; /* Remove a imagem padrão das listras */
+ }
+
+ .navbar-toggler.listras::before,
+ .navbar-toggler.listras::after,
+ .navbar-toggler.listras span {
+   display: block;
+   width: 30px; /* Largura das listras */
+   height: 4px; /* Altura das listras */
+   background-color: #ff1493; /* Altere para a cor desejada */
+   margin: 5px auto; /* Espaçamento entre as listras */
+   content: '';
+ }
+
+.barra {
+  background-color: white;
+  margin-bottom: 0px; 
+}
+.menu {
+  background-color: blue;
+}
+.opcao{
+  text-align: center;
+  color: #000;
+}
+.opcao:hover{
+  color: pink;
+  background-color: #fff;
+}
+
+.divisor{
+  color: #fff;
+}
+.botao{
+    background-color: #ff1493;
+}
+.botao:hover{
+  background-color: pink;
+  color: #fff;
+}
+
+.bordered-title {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  /*border-top: 2px solid #000; /* Borda superior */
+   /*border-bottom: 2px solid #000; /* Borda inferior */
+   /*padding: 10px; /* Espaço interno */
+  margin-left: 0; /* Remove a margem esquerda */
+  margin-right: 0; /* Remove a margem direita */
+  width: 100%; /* Garante que o h1 ocupe toda a largura da coluna */
+  background-color: #fff; /* Fundo opcional */
+}
+ 
+.quantidade{
+  background-color: #ff1493;
+  width: 36.95px;
+}
+
+.quantidade:hover{
+  background-color: #fff;
+  color: pink; 
+}
+
+.comprar{
+  background-color: #ff1493;
+  width: 300px;
+ outline: none;
+  box-shadow: none;
+}
+
+.comprar:hover {
+  background-color:  pink; /* Cor ao passar o mouse */
+  color:#fff; /* Cor do texto ao passar o mouse */
+ }
+ .comprar:focus {
+  outline: none; /* Garante que o foco não tenha contorno */
+  box-shadow: none; /* Garante que não tenha sombra ao focar */
+}
+
+.preco{
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 20px; 
+  margin-left: 0; 
+  margin-right: 0; 
+  width: 100%; 
+  color: #ff1493;
+}
+
+.barraCep{
+  border-color:  #ff1493;
+}
+
+.barraCep:focus{
+ outline: none;
+}
+.botaoCep{
+  background-color: #ff1493;
+  color: #fff;
+}
+
+.botaoCep:hover{
+  background-color: #fff;
+  color: pink;
+}
+
+.descricao{
+  text-align: center
+}
+
+.img-fluid:hover{
+  transform: scale(1.05); /* Aumenta a imagem em 5% */
+  
+}
+
+.suporte{
+    margin-top: 10px;
+}
+
+.container{
+  margin-top: 10px;
+  margin-right: auto; 
+
+}
+.offcanvas-header{
+  background-color: #ff1493;
+}
+
+.avaliacao:hover{
+  color: pink;
+  margin-top: 20px;
+}
+.imagem-avaliacao{
+  width: 200px;
+  text-align: center;
+}
+.produtosSimilares{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 100%; 
+  padding: 20px; 
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.bolossimilares{
+  background-color: pink;
+}
+.corpo{
+  margin-left: 0px;
+}
+.levantar{
+  border-radius: 8px;
+}
+.levantar:hover{
+  transform: scale(1.05); /* Aumenta a imagem em 5% */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.botao-comprar {
+  background-color: #ff1493;
+  border: none; /* Caso haja borda padrão do navegador */
+}
+
+.botao-comprar:hover {
+  background-color: #fab1dc;
+    color: #fff;
+}
+
+.botao-comprar:focus {
+  outline: none; /* Remove a borda de foco */
+}
+
+.teste1 {
+  margin: 0 auto; 
+  /* width: 1600px;  */
+  margin-top: 10px;
+  margin-left: 0px; 
+}
+
+.titulo {
+text-align: center;
+margin-bottom: 20px;
+color: #fff;
+}
+
+.titulo1 {
+  text-align: center;
+  margin-bottom: 10px;
+  }
+
+.similar {
+  margin-bottom: 50px;
+}
+
+.enviar{
+  background-color: #ff1493;
+  color: #fff;
+}
+
+.enviar:hover{
+  background-color: #fab1dc;
+    color: #fff;
+}
+
+.institucional{
+  background-color: gray;
+}
+
+.institucional a {
+  text-decoration: none;
+  color: inherit; /* Mantém a cor do texto pai */
+  text-align: center;
+  
+}
+
+.institucional a:hover {
+  color: white;
+}
+
+
+
+.contato{
+  background-color: gray;
+  color: #fff;
+}
+.formasdepagamento{
+  background-color: gray;
+  color: #fff;
+  justify-items: center;
+}
+
+.formasdepagamento i {
+  font-size: 100px; /* Ajuste o tamanho do ícone se necessário */
+  margin: 50px; /*Espaçamento horizontal entre os ícones */
+} 
+@media (max-width: 808px) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+  }
+}
+@media (max-width: 1217px) {
+  .formasdepagamento i {
+    font-size: 100px; /* Ajuste o tamanho do ícone se necessário */
+    margin: 50px; /*Espaçamento horizontal entre os ícones */
+    margin-left: 10px;
+  }
+}
+@media (max-width: 977px) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+  }
+}
+@media (max-width: 738px) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+    margin-left: 50px;
+  }
+}
+@media (max-width: 674px) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+    margin-left: 50px;
+  }
+}
+@media (max-width: 656px) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+    margin-left: 20px;
+  }
+}
+@media (max-width: 618px ) {
+  .formasdepagamento i {
+    font-size: 80px; /* Menor tamanho de ícone em telas pequenas */
+    margin: 20px; /* Menor espaçamento entre os ícones */
+    margin-left: 25px;
+  }
+}
+
+.tamanho{
+  font-size: 100px;
+  color: white;
+  margin-right: 10px;
+}
+/* Você estava usando o color ao invés do background-color. */
+
+.teste{
+  margin-right: 910px;
+}

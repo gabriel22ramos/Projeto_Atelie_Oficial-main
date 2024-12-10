@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Produtos</title>
+  <link rel="shortcut icon" href="assets/homeP/logoAtelie.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/styleFuncionario.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lista de Usuários</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Endereço Principal</th>
+          <th>Endereço Secundário</th>
+          <th>Telefone Principal</th>
+          <th>Telefone Secundário</th>
+          <th>Senha</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="cadastro : ${cadastros}">
+          <td th:text="${cadastro.id}">ID do Produto</td>
+          <td th:text="${cadastro.nome}">Nome do Produto</td>
+          <td th:text="${cadastro.email}">Preço do Produto</td>
+          <td th:text="${cadastro.endereco}">Preço do Produto</td>
+          <td th:text="${cadastro.outroEndereco}">Preço do Produto</td>
+          <td th:text="${cadastro.telefone_1}">Preço do Produto</td>
+          <td th:text="${cadastro.telefone_2}">Preço do Produto</td>
+          <td th:text="${cadastro.senha}">Preço do Produto</td>
+        </tr>
+      </tbody>
+    </table>
+    <a th:href="@{/}">Voltar a página principal</a>
+  </div>
+</body>
+
+</html>

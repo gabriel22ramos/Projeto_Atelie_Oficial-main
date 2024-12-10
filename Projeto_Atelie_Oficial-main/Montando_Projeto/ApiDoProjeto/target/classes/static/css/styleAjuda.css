@@ -1,0 +1,148 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Usamos flexbox para facilitar o layout */
+    height: 100vh;  /* Faz o body ter 100% da altura da tela */
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;  /* Garante que o container ocupe toda a altura da tela */
+    overflow: hidden;  /* Evita que o body tenha rolagem */
+}
+
+.navbar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    height: 100vh;  /* Garante que a navbar ocupe 100% da altura da tela */
+}
+
+.ajuda {
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    margin-left: 25px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  /* Faz o conteúdo ocupar o espaço restante */
+    padding: 0px;
+    height: 100vh; /* Garante que o conteúdo ocupe 100% da altura da tela */
+    overflow-y: auto;  /* Permite a rolagem do conteúdo */
+}
+
+.duvidas1, .duvidas2, .servicos, .contato {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.titulo1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.titulo2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cadastro {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.paragrafo {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.paragrafo1 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cadastrofinal {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.contato-formulario input, .contato-formulario textarea {
+    width: 80%; /* Aumenta a largura dos campos para 80% da largura do formulário */
+    padding: 15px; /* Aumenta o preenchimento interno para mais conforto ao digitar */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior entre os campos */
+    border: 1px solid #ccc; /* Define uma borda leve */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Aumentando o tamanho do campo "mensagem" */
+.contato-formulario textarea {
+    height: 150px; /* Aumenta a altura do campo de mensagem para 150px */
+}
+
+/* Media Query para telas menores (exemplo: dispositivos móveis) */
+@media (max-width: 768px) {
+.container {
+flex-direction: column; /* Muda o layout para coluna em telas pequenas */
+}
+
+.navbar {
+width: 100%; /* A navbar ocupa 100% da largura na tela pequena */
+height: 110px;
+padding-top: 0px; /* Reduz o espaçamento superior */
+display: flex;  /* Utiliza flexbox para organizar os itens */
+justify-content: space-around; /* Distribui os itens horizontalmente com espaço entre eles */
+align-items: center; /* Alinha os itens verticalmente no centro */
+flex-wrap: nowrap; /* Impede que os links quebrem para uma nova linha */
+}
+
+.navbar a {
+text-align: center; /* Centraliza o texto nos links */
+padding-right: 5px ;
+padding-left: 5px ;
+white-space: nowrap; /* Impede que o texto nos links quebre em várias linhas */
+font-size: 15px;
+}
+
+.content {
+margin-left: 0; /* Remove a margem à esquerda */
+margin-top: 20px; /* Adiciona margem superior para separar a navbar do conteúdo */
+}
+.contato-formulario textarea {
+    width: 90%; /* Aumenta a altura do campo de mensagem para 150px */
+}
+}

@@ -1,0 +1,36 @@
+
+.box-area{
+    width: 930px;
+}
+.btn-pink {
+    background-color: #ff1493;
+    color: #fff;
+}
+.btn-pink:hover {
+    background-color: #fab1dc;
+    color: #fff;
+}
+.caixa-direita {
+    padding: 40px 30px 40px 40px;
+}
+::placeholder {
+    font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+    .box-area{
+        margin: 0 10px;
+    }
+    .caixa-esquerda{
+        height: 400px;  
+    }
+
+
+    .caixa-direita{
+        padding: 20px;
+    }
+
+
+
+
+
+}

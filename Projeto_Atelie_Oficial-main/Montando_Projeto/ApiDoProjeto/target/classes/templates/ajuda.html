@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atêlie</title>
+    <link rel="shortcut icon" href="assets/homeP/logoAtelie.png" type="image/x-icon">
+
+    <link rel="stylesheet"  th:href="@{/css/styleAjuda.css}">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <h2 class="ajuda">Ajuda & Suporte</h2>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#pagamento">Pagamento</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <hr> <a th:href="@{/}"> < Página inicial</a>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <section class="duvidas1">
+                <h1 class="titulo1">¿ Dúvidas Frequentes ? </h1> <br> 
+                <hr> 
+                <h1 class="titulo1" id="cadastro">Cadastro</h1>
+                <h2 class="cadastro">1. Como posso me cadastrar?</h2>
+                <p class="paragrafo"> . Acesse a Página de Cadastro:<br>. Clique no botão "Cadastrar" na página inicial.</p>
+                <h2 class="formulario">2. Preencha o Formulário.</h2> 
+                <p class="paragrafo1">.Insira seu nome completo<br>
+                <br> .Informe um endereço de e-mail válido.<br> 
+                <br> .Crie uma <strong> senha forte (mínimo de 8 caracteres, incluindo letras e números).</strong><br>       
+                <br> <strong>.Aceite os Termos:</strong><br>
+                <br> .Marque a caixa de <strong>aceitação dos termos de uso.</strong><br> 
+                </p>
+                <h2 class="cadastrofinal">3. Finalize o Cadastro</h2>
+                 <p class="paragrafo1">  
+                    .Clique no botão<strong>"Cadastrar"</strong>para enviar seu formulário. <br>
+                   <br class="verifique"><strong>.Verifique seu E-mail:</strong><br>
+                    <br> .Confira sua caixa de entrada <strong>(e spam)</strong> para o e-mail de <strong>confirmação</strong> e clique no link fornecido.
+               </p> 
+            </section>
+
+            <section class="duvidas2" id="pagamento"> 
+                    <hr>
+                    <h1 class="titulo1">Pagamento <br><br></h1>
+                    <h2 class="cadastro">1. Quais são as formas de pagamento?</h2>
+                    <p class="paragrafo">.Você pode pagar através de cartão de crédito, débito ou via transferência bancária.</p><br>
+                    <h2 class="formulario">2. Como realizar o pagamento?</h2>
+                    <p class="paragrafo1">.Após selecionar o serviço desejado, você será direcionado para a página de pagamento. Lá, basta escolher sua forma de pagamento preferida. ></p><br>
+                    <h2 class="cadastrofinal">3. O pagamento é seguro?</h2>
+                    <p class="paragrafo1">.Sim, utilizamos tecnologia de criptografia SSL para garantir a segurança dos seus dados durante o processo de pagamento.</p><br>
+            </section>
+            
+            <section class="servicos" id="servicos">
+                <hr>
+                <h1 class="titulo1">Serviços</h1>
+                <h2 class="cadastro"> 1. Bolos Personalizados</h2>
+                <p class="paragrafo">.Oferecemos bolos personalizados para todas as ocasiões, como aniversários, casamentos, festas corporativas e eventos especiais. Você escolhe o sabor, o recheio e a decoração.</p>
+
+                <h2 class="cadastro"> 2. Bolos de Copo</h2>
+                <p class="paragrafo">.Praticidade e sabor em camadas! Nossos bolos de copo são ideais para festas, eventos ou até como uma opção de sobremesa individual.</p>
+
+                <h2 class="cadastro"> 3. Cupcakes</h2>
+                <p class="paragrafo">.Deliciosos, fofinhos e irresistíveis! Nossos cupcakes são feitos para impressionar. Escolha entre nossas opções de sabores e personalizações!</p>
+
+                <h2 class="cadastro"> 4. Delivery e Encomendas Personalizadas</h2>
+                <p class="paragrafo">.Comodidade e sabor na sua porta! Faça sua encomenda e nós entregamos em sua casa ou evento. Garantimos frescor e qualidade em cada entrega.</p>
+
+                <h2 class="cadastro"> 5. Kits de Festa</h2>
+                <p class="paragrafo">.Com nossos kits de festa, sua celebração estará completa! Escolha os itens que mais combinam com o tema da sua festa e deixe o trabalho pesado por nossa conta.</p>
+
+                <h2 class="cadastro"> 6. Bolos para Eventos Corporativos</h2>
+                <p class="paragrafo">.Impressione seus colaboradores e clientes com um bolo ou cupcakes personalizados para o seu evento corporativo. Nós cuidamos da decoração e do sabor.</p>
+
+                <h2 class="cadastro"> 7. Opções Sem Glúten e Sem Lactose</h2>
+                <p class="paragrafo">.Se você tem necessidades alimentares específicas, temos opções deliciosas sem glúten e sem lactose. Basta nos avisar na hora da encomenda!</p>
+            </section>
+
+            <section class="contato" id="contato">
+                <hr>
+                <h1 class="titulo2">Fale Conosco</h1>
+                <form class="contato-formulario" th:action="@{/faleconosco}" th:object="${contato}" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required th:field="*{nome}"><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required th:field="*{email}"><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" required th:field="*{mensagem}"></textarea><br>
+
+                    <button type="submit">Enviar</button>
+                   
+
+
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
